@@ -1,3 +1,5 @@
+import React, { useState } from 'react';
+
 // Child Component 2: Display
 function Display({ message }) {
   // Uses the state passed down as a prop

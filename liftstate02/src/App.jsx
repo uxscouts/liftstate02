@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Parent from "components/Parent";
+import Parent from "./components/Parent";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
