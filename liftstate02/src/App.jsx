@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Parent from "./components/Parent";
 import Parent2 from "./components/Parent2";
 import Parent3 from "./components/Parent3";
+import Parent4 from "./components/Parent4";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
@@ -39,6 +40,8 @@ function App() {
        <Parent2/>
        <hr/>
        <Parent3/>
+       <hr/>
+       <Parent4/>
       </div>
     </>
   )
