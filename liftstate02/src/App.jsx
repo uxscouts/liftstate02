@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import Parent from "./components/Parent";
+import Parent2 from "./components/Parent2";
+import Parent3 from "./components/Parent3";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
@@ -32,8 +34,11 @@ function App() {
   return (
     <>
       <div className="container">
-        <p>Something</p>
-        <Parent/>
+      <Parent/>
+       <hr/>
+       <Parent2/>
+       <hr/>
+       <Parent3/>
       </div>
     </>
   )

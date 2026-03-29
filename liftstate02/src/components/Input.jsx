@@ -1,5 +1,4 @@
-// Child Component 1: Input
-import React, { useState } from 'react';
+
 
 // Child Component 1: Input
 function Input({ onMessageChange }) {
@@ -9,6 +8,11 @@ function Input({ onMessageChange }) {
   };
 
   return (
-    <input type="text" onChange={handleChange} placeholder="Type something..." />
+    <input 
+      type="text" 
+      onChange={handleChange} 
+      placeholder="Child Component 1" />
   );
 }
+
+export default Input;

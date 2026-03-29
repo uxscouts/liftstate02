@@ -1,20 +1,29 @@
-// Parent Component: Manages the state
-function Parent() {
-  const [message, setMessage] = useState('');
+import Input from "./Input";
+import { useState } from 'react';
+
+
+function Parent(){
+    const [message, setMessage] = useState('');
 
   // Function to update the message state
   const handleMessageChange = (newMessage) => {
     setMessage(newMessage);
-  };
+  }; 
 
-  return (
-    <div>
-      <h1>Parent Component</h1>
+{/*
+  const handleMessageChange = useCallback((newMessage) => {
+  setMessage(newMessage);
+}, [setMessage]); // Recreates only if setMessage changes
+*/}
+
+    return(
+      <>
+        <p>Parent 01</p>
       {/* Pass the state and the updater function as props */}
-      <Input onMessageChange={handleMessageChange} />
-      <Display message={message} />
-    </div>
-  );
+      <p>{message}</p>
+     <Input onMessageChange={handleMessageChange} />   
+      </>
+    )
 }
 
-export default Parent;
+export default Parent
